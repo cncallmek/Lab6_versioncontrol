@@ -12,9 +12,9 @@ def decoder(password):
     result = ''
     for digit in password:
         character = int(digit) - 3
-        if character > 0:
+        if character < 0:
             character += 10
-        result += character
+        result += str(character)
     return result
 
 
