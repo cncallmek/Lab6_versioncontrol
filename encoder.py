@@ -5,8 +5,7 @@ def encoder(password):
         if character > 9:
             character = str(character)[1:]
         result += str(character)
-
-    print(result)
+    return result
 
 
 def decoder(password):
